@@ -4,12 +4,16 @@
     background-color: #161616;
     color: white;
     padding: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .form{
     background-color: red;
     width: 100%;
     /* width: fit-content; */
+    display: flex;
+    flex-direction: column;
 
 }
 
