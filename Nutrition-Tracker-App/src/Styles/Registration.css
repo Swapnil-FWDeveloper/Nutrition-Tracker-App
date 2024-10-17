@@ -1,0 +1,21 @@
+.form-Parent{
+    height: 100vh;
+    width: 100%;
+    background-color: #161616;
+    color: white;
+    padding: 30px;
+}
+
+.form{
+    background-color: red;
+    width: 100%;
+    /* width: fit-content; */
+
+}
+
+@media (max-width: 768px) {
+    .form {
+        width: 90%;           /* Make form take up most of the screen */
+        padding: 15px;        /* Adjust padding for smaller screens */
+    }
+}
