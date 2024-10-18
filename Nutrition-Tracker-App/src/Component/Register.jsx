@@ -30,6 +30,8 @@ const Register = () => {
             placeholder="Enter Age"
             name="age"
           />
+          <button className="Btn">Join</button>
+          <p>Already Registered ? Login</p>
         </form>
       </section>
     </>
