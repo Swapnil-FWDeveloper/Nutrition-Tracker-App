@@ -28,6 +28,7 @@
 }
 
 .Btn{
+    width: 20%;
     padding: 10px 50px;
     border-radius: 5px;
     background-color: #167ce0;
@@ -35,6 +36,10 @@
     text-transform: uppercase;
     font-weight: bold;
     border: 1px solid #167ce0;
+    cursor: pointer;
+}
+.Btn:hover{
+    background-color: #5395d7;
 }
 
 

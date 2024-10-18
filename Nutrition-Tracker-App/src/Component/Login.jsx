@@ -1,18 +1,13 @@
 import React from "react";
-import "../Styles/Registration.css";
 import { Link } from "react-router-dom";
-const Register = () => {
+import "../Styles/Login.css";
+const Login = () => {
   return (
     <>
       <section className="form-Parent">
         <form className="form">
-          <h1>Start your Fitness</h1>
-          <input
-            className="inp"
-            type="text"
-            placeholder="Enter Name"
-            name="name"
-          />
+          <h1>Login to Fitness</h1>
+
           <input
             className="inp"
             type="email"
@@ -25,18 +20,12 @@ const Register = () => {
             placeholder="Enter Password"
             name="password"
           />
-          <input
-            className="inp"
-            type="number"
-            placeholder="Enter Age"
-            name="age"
-          />
           <button className="Btn">Join</button>
-          <p>Already Registered ? <Link to={"/login"}>Login</Link></p>
+          <p>Dont have account ? <Link to={"/register"}> Register Now</Link></p>
         </form>
       </section>
     </>
   );
 };
 
-export default Register;
+export default Login;
