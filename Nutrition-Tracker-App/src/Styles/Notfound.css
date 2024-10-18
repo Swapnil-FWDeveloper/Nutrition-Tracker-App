@@ -7,17 +7,18 @@
     justify-content: center;
     align-items: center;
     background-color: #2c3e50;
-    color: #ecf0f1; 
+    color: #ecf0f1;
     text-align: center;
-    font-family: 'Arial', sans-serif; 
+    font-family: 'Arial', sans-serif;
+    padding: 0 20px; /* Added padding for smaller screens */
 }
 
 .Container h1 {
-    font-size: 6rem; 
+    font-size: 6rem; /* Default for large screens */
     margin: 0;
     font-weight: bold;
-    color: #e74c3c; 
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    color: #e74c3c;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .Container p {
@@ -27,24 +28,101 @@
 
 .Container a {
     text-decoration: none;
-    color: #3498db; 
+    color: #3498db;
     padding: 10px 20px;
-    background-color: #34495e; 
+    background-color: #34495e;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease-in-out;
 }
 
 .Container a:hover {
-    background-color: #2980b9; 
+    background-color: #2980b9;
 }
 
 .Container .illustration {
     width: 150px;
     height: 150px;
-    background-image: url('404-illustration.png'); 
+    background-image: url('404-illustration.png');
     background-size: cover;
     background-position: center;
     margin-bottom: 30px;
 }
 
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    .Container h1 {
+        font-size: 5rem;
+    }
+
+    .Container p {
+        font-size: 1.3rem;
+    }
+
+    .Container a {
+        padding: 8px 18px;
+    }
+
+    .Container .illustration {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Container h1 {
+        font-size: 4rem;
+    }
+
+    .Container p {
+        font-size: 1.2rem;
+    }
+
+    .Container a {
+        padding: 7px 16px;
+    }
+
+    .Container .illustration {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 576px) {
+    .Container h1 {
+        font-size: 3rem;
+    }
+
+    .Container p {
+        font-size: 1rem;
+    }
+
+    .Container a {
+        padding: 6px 14px;
+    }
+
+    .Container .illustration {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .Container h1 {
+        font-size: 2.5rem;
+    }
+
+    .Container p {
+        font-size: 0.9rem;
+    }
+
+    .Container a {
+        padding: 5px 12px;
+    }
+
+    .Container .illustration {
+        width: 80px;
+        height: 80px;
+    }
+}
